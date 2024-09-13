@@ -4,7 +4,6 @@ import FullWidthImage from '../components/FullWidthImage';
 import PageHeader from '../components/PageHeader';
 import Gallery from '../components/Gallery';
 import college from '../assets/college-hero.jfif'
-import CollegeView from '../components/CollegeView';
 
 
 const Galleries = () => {
@@ -20,7 +19,6 @@ const Galleries = () => {
     <PageHeader  {...headerData} />
       <Events />
        <Gallery />
-       <CollegeView />
       <FullWidthImage />
       <Footer />
     </>
