@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 8px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 218, 185, 1); 
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: orange; 
+    border-radius: 10px; 
+  }
+
+  .custom-dot button {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ccc;
+    border: none;
+    cursor: pointer;
+    margin: 0 4px;
+  }
+  
+  .custom-dot.active button {
+    background: #000;
+  }
+  
+  .react-multi-carousel-dot-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px; /* Adjust the distance from the carousel */
+  }
+  
+  .react-multi-carousel-dot-list li {
+    display: inline-block;
+  }
+  
+  .react-multi-carousel-dot-list li:nth-child(n+4) {
+    display: none; /* Hide dots beyond the first three */
+  }
+  .btn-gradient {
+    background: linear-gradient(to right, purple 50%, orange 50%);
+    background-size: 200% 100%;
+    transition: background-position 0.5s ease;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+  }
+  
+  .btn-gradient:hover {
+    background-position: -100% 0;
+  }
+  /* marque in uniform page */
+  .scrolling-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 8s linear infinite;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(200%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  
+
+
+  /* <button className="bg-purple-500 text-white py-2 px-4 rounded transition-colors bg-gradient-to-r from-red-500 to-red-700 hover:from-red-700 hover:to-red-500">
+                Read More
+              </button> */
+
+                /* for animations */
+              /* React Reveal */
+
+              /* React Spring */

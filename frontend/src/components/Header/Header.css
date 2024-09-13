@@ -1,0 +1,72 @@
+/* .header-container,
+.w-full {
+  max-width: 100%;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+.flex {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+} */
+
+
+  /* Hover effect for desktop links */
+  .anchor {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .anchor:hover {
+    color: #741dd8; /* Blue color on hover */
+  }
+  
+  .anchor::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    background: #741dd8; /* Blue color for underline */
+    transition: width 0.3s;
+    left: 0;
+    bottom: -5px;
+  }
+  
+  .anchor:hover::after {
+    width: 100%;
+  }
+  
+  /* Dropdown link hover effect */
+  .dropdown .anchor {
+    padding: 0.5rem 1rem;
+    color: #333333;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown .anchor:hover {
+    background-color: #eec690d2; /* Light gray background on hover */
+  }
+  
+  /* Mobile menu link hover effect */
+  .mobile-menu .anchor {
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mobile-menu .anchor:hover {
+    background-color: #e5e7eb; /* Light gray background on hover */
+  }
+
+  .active {
+    font-weight: bold;
+    font-style: italic;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: box-shadow 0.3s ease; 
+}
+
+
+  

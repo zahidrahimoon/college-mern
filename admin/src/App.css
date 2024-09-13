@@ -1,0 +1,31 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  background-color: var(--body-color);
+}
+
+/* Dark mode styles */
+body.dark {
+  --body-color: #121212;
+  --text-color: #ffffff;
+  --border-color: #27272a;
+  --logo-filter: brightness(0) invert(1);
+}
+
+/* Light mode styles */
+body.lightcolors {
+  --body-color: #ffffff;
+  --text-color: #000000;
+  --border-color: #ddd;
+  --logo-filter: none;
+}
+
+.logo {
+  filter: var(--logo-filter);
+}
+
